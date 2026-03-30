@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://r25bqci45nff"]
+
+[ext_resource type="Texture2D" uid="uid://bo7x14h0mytxm" path="res://barco/barco.png" id="1_6mogq"]
+[ext_resource type="Script" uid="uid://bv1rbayu8k50o" path="res://barco.gd" id="2_h261h"]
+[ext_resource type="Script" uid="uid://u50qqoxgvsf5" path="res://areabarco.gd" id="3_apev5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bxh6c"]
+size = Vector2(837.83167, 529.8605)
+
+[node name="Node2D" type="Node2D" unique_id=1028938457]
+
+[node name="Barco" type="Sprite2D" parent="." unique_id=906495112]
+position = Vector2(112.500046, 67.00003)
+scale = Vector2(0.16351734, 0.16796875)
+texture = ExtResource("1_6mogq")
+script = ExtResource("2_h261h")
+
+[node name="Area2D" type="Area2D" parent="Barco" unique_id=1894644279]
+script = ExtResource("3_apev5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Barco/Area2D" unique_id=57481646]
+position = Vector2(12.230896, 20.837006)
+shape = SubResource("RectangleShape2D_bxh6c")
