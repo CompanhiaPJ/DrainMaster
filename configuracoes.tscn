@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dyt46eshhc655"]
+
+[ext_resource type="Script" uid="uid://c5x2s0wxlmhu8" path="res://configuracoes.gd" id="1_dnuwa"]
+
+[node name="Node2D" type="Node2D" unique_id=902447245]
+script = ExtResource("1_dnuwa")
+
+[node name="Button" type="Button" parent="." unique_id=1976759071]
+offset_left = 30.0
+offset_top = 54.0
+offset_right = 85.0
+offset_bottom = 85.0
+text = "Voltar"
+
+[connection signal="pressed" from="Button" to="." method="_on_buttonBack_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

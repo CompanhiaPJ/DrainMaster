@@ -4,7 +4,6 @@ var barco = preload("res://barco.tscn")
 
 func _input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.pressed:
-		print("clicou no objeto")
 		cria_barco()
 
 func cria_barco():
