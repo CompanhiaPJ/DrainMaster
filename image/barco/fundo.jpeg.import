@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cg3y44s0a8flf"
-path="res://.godot/imported/Tire_fundo_dessa_202603300816-removebg-preview.png-260a66b54a73e06b2b0df2fddd1e3ea3.ctex"
+uid="uid://cx0f5ancfk74o"
+path="res://.godot/imported/fundo.jpeg-51ba18cefb566202fdddd862af616fed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://barco/Tire_fundo_dessa_202603300816-removebg-preview.png"
-dest_files=["res://.godot/imported/Tire_fundo_dessa_202603300816-removebg-preview.png-260a66b54a73e06b2b0df2fddd1e3ea3.ctex"]
+source_file="res://image/barco/fundo.jpeg"
+dest_files=["res://.godot/imported/fundo.jpeg-51ba18cefb566202fdddd862af616fed.ctex"]
 
 [params]
 

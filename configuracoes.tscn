@@ -12,5 +12,26 @@ offset_right = 85.0
 offset_bottom = 85.0
 text = "Voltar"
 
-[connection signal="pressed" from="Button" to="." method="_on_buttonBack_pressed"]
+[node name="OptionButtonQuality" type="OptionButton" parent="." unique_id=195574299]
+offset_left = 206.0
+offset_top = 297.0
+offset_right = 238.0
+offset_bottom = 317.0
+item_count = 3
+popup/item_0/text = "Baixa"
+popup/item_0/id = 0
+popup/item_1/text = "Média"
+popup/item_1/id = 1
+popup/item_2/text = "Alta"
+popup/item_2/id = 2
+
+[node name="Label" type="Label" parent="." unique_id=1487711160]
+offset_left = 99.0
+offset_top = 296.0
+offset_right = 183.0
+offset_bottom = 319.0
+text = "Qualidade:"
+
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_buttonBack_pressed"]
+[connection signal="item_selected" from="OptionButtonQuality" to="." method="_on_OptionButtonQuality_item_selected"]

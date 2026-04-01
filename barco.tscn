@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://r25bqci45nff"]
 
-[ext_resource type="Texture2D" uid="uid://bo7x14h0mytxm" path="res://barco/barco.png" id="1_6mogq"]
+[ext_resource type="Texture2D" uid="uid://bo7x14h0mytxm" path="res://image/barco/barco.png" id="1_6mogq"]
 [ext_resource type="Script" uid="uid://bv1rbayu8k50o" path="res://barco.gd" id="2_h261h"]
 [ext_resource type="Script" uid="uid://u50qqoxgvsf5" path="res://areabarco.gd" id="3_apev5"]
 

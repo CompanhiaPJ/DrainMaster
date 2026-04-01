@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ciwuheq6wnffk"]
 
 [ext_resource type="Script" uid="uid://bnvxdeskrgjpl" path="res://telainicial.gd" id="1_3gpnj"]
-[ext_resource type="Texture2D" uid="uid://cg3y44s0a8flf" path="res://barco/Tire_fundo_dessa_202603300816-removebg-preview.png" id="2_d7fp5"]
+[ext_resource type="Texture2D" uid="uid://cg3y44s0a8flf" path="res://image/Tire_fundo_dessa_202603300816-removebg-preview.png" id="2_d7fp5"]
 
 [node name="Node2D" type="Node2D" unique_id=1678309627]
 script = ExtResource("1_3gpnj")

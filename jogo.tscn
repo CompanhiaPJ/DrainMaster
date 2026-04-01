@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bqp0hrxloie2a"]
 
-[ext_resource type="Texture2D" uid="uid://bo7x14h0mytxm" path="res://barco/barco.png" id="1_kxg5b"]
-[ext_resource type="Texture2D" uid="uid://cx0f5ancfk74o" path="res://barco/fundo.jpeg" id="3_1ap6j"]
+[ext_resource type="Texture2D" uid="uid://bo7x14h0mytxm" path="res://image/barco/barco.png" id="1_kxg5b"]
+[ext_resource type="Texture2D" uid="uid://cx0f5ancfk74o" path="res://image/barco/fundo.jpeg" id="3_1ap6j"]
 [ext_resource type="Script" uid="uid://b62gx0uyg7wba" path="res://area_2d.gd" id="3_yq54j"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yq54j"]
