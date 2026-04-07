@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c10gyelnn4ngf"
+path="res://.godot/imported/[Efeito Sonoro] Dinheiro - Efeitos Sonoros Produções (youtube).mp3-a4f3681534b5a3d8e14873d1ee4eabfb.mp3str"
+
+[deps]
+
+source_file="res://audios/[Efeito Sonoro] Dinheiro - Efeitos Sonoros Produções (youtube).mp3"
+dest_files=["res://.godot/imported/[Efeito Sonoro] Dinheiro - Efeitos Sonoros Produções (youtube).mp3-a4f3681534b5a3d8e14873d1ee4eabfb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

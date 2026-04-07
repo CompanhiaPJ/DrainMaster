@@ -1,13 +1,18 @@
 [gd_scene format=3 uid="uid://bqp0hrxloie2a"]
 
 [ext_resource type="Texture2D" uid="uid://bo7x14h0mytxm" path="res://image/barco/barco.png" id="1_kxg5b"]
+[ext_resource type="Script" uid="uid://c4b3kowcflu0v" path="res://jogo.gd" id="1_qn35j"]
 [ext_resource type="Texture2D" uid="uid://cx0f5ancfk74o" path="res://image/barco/fundo.jpeg" id="3_1ap6j"]
 [ext_resource type="Script" uid="uid://b62gx0uyg7wba" path="res://area_2d.gd" id="3_yq54j"]
+[ext_resource type="Script" uid="uid://c8f2jsdu8bl37" path="res://label_2.gd" id="5_8c340"]
+[ext_resource type="Script" uid="uid://cfih4r2mont11" path="res://label.gd" id="5_45nkh"]
+[ext_resource type="AudioStream" uid="uid://c10gyelnn4ngf" path="res://audios/[Efeito Sonoro] Dinheiro - Efeitos Sonoros Produções (youtube).mp3" id="5_ysdx3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yq54j"]
 size = Vector2(838.5596, 390.85712)
 
 [node name="Node2D" type="Node2D" unique_id=952352408]
+script = ExtResource("1_qn35j")
 
 [node name="Fundo" type="Sprite2D" parent="." unique_id=137544902]
 position = Vector2(589.75, 326.25)
@@ -26,10 +31,14 @@ script = ExtResource("3_yq54j")
 position = Vector2(22.869629, 37.714294)
 shape = SubResource("RectangleShape2D_yq54j")
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="barcoparado/Area2D" unique_id=1164594894]
+stream = ExtResource("5_ysdx3")
+
 [node name="Label" type="Label" parent="." unique_id=2109023652]
 offset_right = 40.0
 offset_bottom = 23.0
 text = "Dinheiro:"
+script = ExtResource("5_45nkh")
 
 [node name="Label2" type="Label" parent="." unique_id=535942328]
 offset_left = 77.0
@@ -37,3 +46,4 @@ offset_top = -1.0
 offset_right = 117.0
 offset_bottom = 22.0
 text = "1000"
+script = ExtResource("5_8c340")
