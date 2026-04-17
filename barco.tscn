@@ -23,3 +23,10 @@ script = ExtResource("3_apev5")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Barco/Area2D" unique_id=57481646]
 position = Vector2(12.230896, 20.837006)
 shape = SubResource("RectangleShape2D_bxh6c")
+
+[node name="Timer" type="Timer" parent="." unique_id=222872704]
+wait_time = 10.0
+autostart = true
+
+[connection signal="area_entered" from="Barco/Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
