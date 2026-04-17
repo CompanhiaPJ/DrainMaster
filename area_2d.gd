@@ -13,6 +13,8 @@ func _ready():
 	caixaverde.color = Color(0, 1, 0, 0.0)
 	caixaverde.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	caixavermelha.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	caixavermelha.visible = true
+	caixaverde.visible = true
 
 func _input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.pressed:
@@ -30,8 +32,8 @@ func cria_barco():
 	get_tree().current_scene.add_child(novo_barco)
 	novo_barco.global_position = get_global_mouse_position()
 	novo_barco.andar()
-	caixavermelha.color = Color(1, 0, 0, 0.1)
-	caixaverde.color = Color(0, 1, 0, 0.1)
+	caixavermelha.color = Color(1, 0, 0, 0.15)
+	caixaverde.color = Color(0, 1, 0, 0.15)
 
 func tiracaixa():
 	caixavermelha.color = Color(1, 0, 0, 0.0)

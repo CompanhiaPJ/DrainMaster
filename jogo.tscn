@@ -9,12 +9,17 @@
 [ext_resource type="AudioStream" uid="uid://c10gyelnn4ngf" path="res://audios/[Efeito Sonoro] Dinheiro - Efeitos Sonoros Produções (youtube).mp3" id="5_ysdx3"]
 [ext_resource type="AudioStream" uid="uid://d34371wcsjc85" path="res://audios/error-notification.mp3" id="6_ysdx3"]
 [ext_resource type="AudioStream" uid="uid://cndtgmwv3vgum" path="res://audios/dinheiro-caindo-na-conta.mp3" id="9_t8pok"]
+[ext_resource type="Script" uid="uid://jh28lhrapaaa" path="res://hidra_1.gd" id="10_mtw28"]
+[ext_resource type="Script" uid="uid://c3kyndk2flw3t" path="res://hidra_2.gd" id="11_orj5g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yq54j"]
 size = Vector2(838.5596, 390.85712)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t8pok"]
 size = Vector2(1183, 1.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mtw28"]
+size = Vector2(49, 101)
 
 [node name="Node2D" type="Node2D" unique_id=952352408]
 script = ExtResource("1_qn35j")
@@ -43,6 +48,7 @@ stream = ExtResource("5_ysdx3")
 stream = ExtResource("6_ysdx3")
 
 [node name="ColorRect" type="ColorRect" parent="barcoparado/Area2D" unique_id=1328106825]
+visible = false
 offset_left = -6251.0806
 offset_top = -198.85713
 offset_right = 2797.7397
@@ -50,6 +56,7 @@ offset_bottom = 2489.1426
 color = Color(0.29753923, 0.66600835, 0, 1)
 
 [node name="ColorRect2" type="ColorRect" parent="barcoparado/Area2D" unique_id=1045329435]
+visible = false
 offset_left = -6312.067
 offset_top = 2489.1426
 offset_right = 2790.1167
@@ -78,3 +85,53 @@ stream = ExtResource("9_t8pok")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="mar" unique_id=1640941803]
 position = Vector2(592, 393.75)
 shape = SubResource("RectangleShape2D_t8pok")
+
+[node name="hidra1" type="ColorRect" parent="." unique_id=947020472]
+offset_left = -2.0
+offset_top = 291.0
+offset_right = 48.0
+offset_bottom = 391.0
+script = ExtResource("10_mtw28")
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="hidra1" unique_id=329958295]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hidra1/Area2D" unique_id=106526091]
+position = Vector2(25.5, 49.5)
+shape = SubResource("RectangleShape2D_mtw28")
+
+[node name="Label" type="Label" parent="hidra1" unique_id=437928004]
+layout_mode = 0
+offset_left = 52.0
+offset_top = -1.0
+offset_right = 92.0
+offset_bottom = 22.0
+text = "0.50"
+
+[node name="hidra2" type="ColorRect" parent="." unique_id=1472840186]
+offset_left = 1129.0
+offset_top = 293.0
+offset_right = 1179.0
+offset_bottom = 393.0
+script = ExtResource("11_orj5g")
+
+[node name="Area2D" type="Area2D" parent="hidra2" unique_id=9510766]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hidra2/Area2D" unique_id=1178073576]
+position = Vector2(25, 50)
+shape = SubResource("RectangleShape2D_mtw28")
+
+[node name="Label" type="Label" parent="hidra2" unique_id=877749547]
+layout_mode = 0
+offset_left = -50.0
+offset_top = -1.0
+offset_right = -10.0
+offset_bottom = 22.0
+text = "0.50"
+
+[node name="Timer" type="Timer" parent="." unique_id=1823957391]
+wait_time = 2.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="hidra1" method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer" to="hidra2" method="_on_timer_timeout"]
