@@ -5,6 +5,14 @@ extends Area2D
 @onready var label = get_node("../../Label")
 var barco = preload("res://barco.tscn")
 var dinheiro = false
+@onready var caixaverde = $ColorRect
+@onready var caixavermelha = $ColorRect2
+
+func _ready():
+	caixavermelha.color = Color(1, 0, 0, 0.0)
+	caixaverde.color = Color(0, 1, 0, 0.0)
+	caixaverde.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	caixavermelha.mouse_filter = Control.MOUSE_FILTER_IGNORE
 
 func _input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.pressed:
@@ -22,3 +30,9 @@ func cria_barco():
 	get_tree().current_scene.add_child(novo_barco)
 	novo_barco.global_position = get_global_mouse_position()
 	novo_barco.andar()
+	caixavermelha.color = Color(1, 0, 0, 0.1)
+	caixaverde.color = Color(0, 1, 0, 0.1)
+
+func tiracaixa():
+	caixavermelha.color = Color(1, 0, 0, 0.0)
+	caixaverde.color = Color(0, 1, 0, 0.0)

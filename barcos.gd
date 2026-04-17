@@ -1,7 +1,8 @@
 extends Node2D
-
 @onready var sprite = $Barco
 @onready var dinheiro = get_node("/root/Node2D/Label2")
+@onready var caixas = get_node("/root/Node2D/barcoparado/Area2D")
+@onready var timer10s = $Timer
 
 var valorganho = 50
 var dentro = false
@@ -9,12 +10,14 @@ var soltou = false
 
 var speed = 100
 var speedy = 200
-var direction = 1  # X
+var direction = 1
 
 var limite = 150
 var inicio_x
 
 func solto():
+	caixas.tiracaixa()
+	timer10s.start()
 	soltou = true
 
 func andar():
@@ -44,3 +47,8 @@ func _on_timer_timeout() -> void:
 func _on_area_2d_area_entered(area: Area2D) -> void:
 	if area.name == "mar":
 		dentro = true
+
+
+func _on_area_2d_area_exited(area: Area2D) -> void:
+	if area.name == "mar":
+		dentro = false
