@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cmb7knc8t6e4m" path="res://historia.gd" id="1_frv7s"]
 [ext_resource type="Script" uid="uid://b2mktn6w1fhlf" path="res://labelhistoria.gd" id="2_frv7s"]
+[ext_resource type="FontFile" uid="uid://c8pyqysuxuwma" path="res://fonte/FonteProjetoIntegrador.ttf" id="2_y27lj"]
 
 [node name="Node2D" type="Node2D" unique_id=1425934130]
 script = ExtResource("1_frv7s")
@@ -11,5 +12,6 @@ offset_left = 258.0
 offset_top = 169.0
 offset_right = 323.0
 offset_bottom = 203.0
+theme_override_fonts/font = ExtResource("2_y27lj")
 text = "Historia muitao boa do jogo"
 script = ExtResource("2_frv7s")

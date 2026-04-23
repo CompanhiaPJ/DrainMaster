@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bnvxdeskrgjpl" path="res://telainicial.gd" id="1_3gpnj"]
 [ext_resource type="Texture2D" uid="uid://cg3y44s0a8flf" path="res://image/Tire_fundo_dessa_202603300816-removebg-preview.png" id="2_d7fp5"]
+[ext_resource type="AudioStream" uid="uid://ddr5wd764ufw1" path="res://audios/button-click_[cut_0sec].mp3" id="3_5hhvd"]
 
 [node name="Node2D" type="Node2D" unique_id=1678309627]
 script = ExtResource("1_3gpnj")
@@ -26,5 +27,9 @@ offset_bottom = 445.0
 size_flags_horizontal = 4
 text = "Configurações"
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1884832464]
+stream = ExtResource("3_5hhvd")
+
 [connection signal="pressed" from="Button" to="." method="_on_buttonPlay_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_config_pressed"]
+[connection signal="finished" from="AudioStreamPlayer2D" to="." method="_on_audio_stream_player_2d_finished"]
