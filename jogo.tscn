@@ -2,35 +2,36 @@
 
 [ext_resource type="Texture2D" uid="uid://bo7x14h0mytxm" path="res://image/barco/barco.png" id="1_kxg5b"]
 [ext_resource type="Script" uid="uid://c4b3kowcflu0v" path="res://jogo.gd" id="1_qn35j"]
-[ext_resource type="Texture2D" uid="uid://cx0f5ancfk74o" path="res://image/barco/fundo.jpeg" id="3_1ap6j"]
+[ext_resource type="Texture2D" uid="uid://bcnepvdud2n8v" path="res://image/barco/Fundo.png" id="2_01kpq"]
 [ext_resource type="Script" uid="uid://b62gx0uyg7wba" path="res://area_2d.gd" id="3_yq54j"]
 [ext_resource type="Script" uid="uid://c8f2jsdu8bl37" path="res://label_2.gd" id="5_8c340"]
 [ext_resource type="Script" uid="uid://cfih4r2mont11" path="res://label.gd" id="5_45nkh"]
 [ext_resource type="AudioStream" uid="uid://c10gyelnn4ngf" path="res://audios/[Efeito Sonoro] Dinheiro - Efeitos Sonoros Produções (youtube).mp3" id="5_ysdx3"]
 [ext_resource type="AudioStream" uid="uid://d34371wcsjc85" path="res://audios/error-notification.mp3" id="6_ysdx3"]
+[ext_resource type="FontFile" uid="uid://c8pyqysuxuwma" path="res://fonte/FonteProjetoIntegrador.ttf" id="8_2ka1p"]
 [ext_resource type="AudioStream" uid="uid://cndtgmwv3vgum" path="res://audios/dinheiro-caindo-na-conta.mp3" id="9_t8pok"]
 [ext_resource type="Script" uid="uid://jh28lhrapaaa" path="res://hidra_1.gd" id="10_mtw28"]
 [ext_resource type="Script" uid="uid://c3kyndk2flw3t" path="res://hidra_2.gd" id="11_orj5g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yq54j"]
-size = Vector2(838.5596, 390.85712)
+size = Vector2(489.79504, 359.14282)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t8pok"]
 size = Vector2(1183, 1.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mtw28"]
-size = Vector2(49, 101)
+size = Vector2(111.25, 83)
 
 [node name="Node2D" type="Node2D" unique_id=952352408]
 script = ExtResource("1_qn35j")
 
 [node name="Fundo" type="Sprite2D" parent="." unique_id=137544902]
-position = Vector2(589.75, 326.25)
-scale = Vector2(0.8564681, 0.8352865)
-texture = ExtResource("3_1ap6j")
+position = Vector2(575.99994, 325)
+scale = Vector2(1.3032694, 1.2985972)
+texture = ExtResource("2_01kpq")
 
 [node name="barcoparado" type="Sprite2D" parent="." unique_id=422227399]
-position = Vector2(819, 32)
+position = Vector2(-102.99994, 78)
 scale = Vector2(0.13117732, 0.14583334)
 texture = ExtResource("1_kxg5b")
 
@@ -38,7 +39,7 @@ texture = ExtResource("1_kxg5b")
 script = ExtResource("3_yq54j")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="barcoparado/Area2D" unique_id=1934769631]
-position = Vector2(22.869629, 37.714294)
+position = Vector2(7554.659, -363.42856)
 shape = SubResource("RectangleShape2D_yq54j")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="barcoparado/Area2D" unique_id=1164594894]
@@ -49,31 +50,35 @@ stream = ExtResource("6_ysdx3")
 
 [node name="ColorRect" type="ColorRect" parent="barcoparado/Area2D" unique_id=1328106825]
 visible = false
-offset_left = -6251.0806
-offset_top = -198.85713
-offset_right = 2797.7397
-offset_bottom = 2489.1426
+offset_left = 716.5869
+offset_top = -527.99994
+offset_right = 9765.407
+offset_bottom = 2159.9998
 color = Color(0.29753923, 0.66600835, 0, 1)
 
 [node name="ColorRect2" type="ColorRect" parent="barcoparado/Area2D" unique_id=1045329435]
 visible = false
-offset_left = -6312.067
-offset_top = 2489.1426
-offset_right = 2790.1167
-offset_bottom = 4258.285
+offset_left = 663.22394
+offset_top = 2173.714
+offset_right = 9765.407
+offset_bottom = 3942.8567
 color = Color(0.7647059, 0, 0, 1)
 
 [node name="Label" type="Label" parent="." unique_id=2109023652]
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = -72.0
+offset_top = 4.0
+offset_bottom = 27.0
 text = "Dinheiro:"
 script = ExtResource("5_45nkh")
 
 [node name="Label2" type="Label" parent="." unique_id=535942328]
-offset_left = 77.0
-offset_top = -1.0
-offset_right = 117.0
-offset_bottom = 22.0
+offset_left = 563.0
+offset_top = 7.0
+offset_right = 641.0
+offset_bottom = 54.0
+theme_override_colors/font_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+theme_override_fonts/font = ExtResource("8_2ka1p")
+theme_override_font_sizes/font_size = 43
 text = "1000"
 script = ExtResource("5_8c340")
 
@@ -87,46 +92,52 @@ position = Vector2(592, 393.75)
 shape = SubResource("RectangleShape2D_t8pok")
 
 [node name="hidra1" type="ColorRect" parent="." unique_id=947020472]
-offset_left = -2.0
-offset_top = 291.0
-offset_right = 48.0
-offset_bottom = 391.0
+offset_left = -70.0
+offset_top = 286.0
+offset_right = -20.0
+offset_bottom = 386.0
 script = ExtResource("10_mtw28")
 metadata/_edit_use_anchors_ = true
 
 [node name="Area2D" type="Area2D" parent="hidra1" unique_id=329958295]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="hidra1/Area2D" unique_id=106526091]
-position = Vector2(25.5, 49.5)
+position = Vector2(147, -26)
 shape = SubResource("RectangleShape2D_mtw28")
 
 [node name="Label" type="Label" parent="hidra1" unique_id=437928004]
 layout_mode = 0
-offset_left = 52.0
-offset_top = -1.0
-offset_right = 92.0
-offset_bottom = 22.0
+offset_left = 250.0
+offset_top = -150.0
+offset_right = 309.0
+offset_bottom = -113.0
+theme_override_colors/font_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+theme_override_fonts/font = ExtResource("8_2ka1p")
+theme_override_font_sizes/font_size = 36
 text = "0.50"
 
 [node name="hidra2" type="ColorRect" parent="." unique_id=1472840186]
-offset_left = 1129.0
+offset_left = 1184.0
 offset_top = 293.0
-offset_right = 1179.0
+offset_right = 1234.0
 offset_bottom = 393.0
 script = ExtResource("11_orj5g")
 
 [node name="Area2D" type="Area2D" parent="hidra2" unique_id=9510766]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="hidra2/Area2D" unique_id=1178073576]
-position = Vector2(25, 50)
+position = Vector2(-118, -36)
 shape = SubResource("RectangleShape2D_mtw28")
 
 [node name="Label" type="Label" parent="hidra2" unique_id=877749547]
 layout_mode = 0
-offset_left = -50.0
-offset_top = -1.0
-offset_right = -10.0
-offset_bottom = 22.0
+offset_left = -216.0
+offset_top = -167.0
+offset_right = -164.0
+offset_bottom = -132.0
+theme_override_colors/font_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+theme_override_fonts/font = ExtResource("8_2ka1p")
+theme_override_font_sizes/font_size = 31
 text = "0.50"
 
 [node name="Timer" type="Timer" parent="." unique_id=1823957391]
