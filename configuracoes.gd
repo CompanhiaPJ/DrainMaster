@@ -2,7 +2,7 @@ extends Node2D
 
 # Chama quando clica no botão "Voltar"
 func _on_buttonBack_pressed() -> void:
-	get_tree().change_scene_to_file("res://telainicial.tscn")
+	get_tree().change_scene_to_file("res://Cenas/telainicial.tscn")
 
 # Chama quando o jogador muda a opção de qualidade
 func _on_OptionButtonQuality_item_selected(index: int) -> void:

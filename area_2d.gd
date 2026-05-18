@@ -3,7 +3,7 @@ extends Area2D
 @onready var erro = $AudioStreamPlayer2D2
 @onready var label2 = get_node("../../Label2")
 @onready var label = get_node("../../Label")
-var barco = preload("res://barco.tscn")
+var barco = preload("res://Cenas/barco.tscn")
 var dinheiro = false
 @onready var caixaverde = $ColorRect
 @onready var caixavermelha = $ColorRect2

@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://d30bfeg507tie"]
+
+[ext_resource type="Texture2D" uid="uid://cj5qpm2xdlj3e" path="res://image/tire_o_da_esquerda_e_202605180820-removebg-preview (12).png" id="1_6a3u2"]
+
+[node name="Node2D" type="Node2D" unique_id=1448108208]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=317424223]
+position = Vector2(1002, 464)
+texture = ExtResource("1_6a3u2")
