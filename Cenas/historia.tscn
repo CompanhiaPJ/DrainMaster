@@ -19,5 +19,6 @@ text = "Historia muitao boa do jogo"
 script = ExtResource("2_frv7s")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1808394712]
+visible = false
 position = Vector2(910, 457)
 texture = ExtResource("4_g4k01")
