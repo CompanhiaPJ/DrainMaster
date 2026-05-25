@@ -1,23 +1,8 @@
 [gd_scene format=3 uid="uid://d30bfeg507tie"]
 
-[ext_resource type="Texture2D" uid="uid://cj5qpm2xdlj3e" path="res://image/tire_o_da_esquerda_e_202605180820-removebg-preview (12).png" id="1_6a3u2"]
-[ext_resource type="Texture2D" uid="uid://c6fh62lxrf7v0" path="res://image/casaazul.png" id="2_os3ae"]
-[ext_resource type="Texture2D" uid="uid://3gihs1b0kkc2" path="res://image/ponte.png" id="3_8jskm"]
+[sub_resource type="BoxMesh" id="BoxMesh_8un2b"]
 
-[node name="Node2D" type="Node2D" unique_id=1448108208]
+[node name="Node3D" type="Node3D" unique_id=1763821056]
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=317424223]
-visible = false
-position = Vector2(1002, 464)
-texture = ExtResource("1_6a3u2")
-
-[node name="casaazul" type="Sprite2D" parent="." unique_id=573700730]
-position = Vector2(789, 552)
-scale = Vector2(0.2, 0.2)
-texture = ExtResource("2_os3ae")
-
-[node name="Ponte" type="Sprite2D" parent="." unique_id=1049561301]
-position = Vector2(562, 595)
-scale = Vector2(0.1, 0.12)
-texture = ExtResource("3_8jskm")
-flip_h = true
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=930543129]
+mesh = SubResource("BoxMesh_8un2b")

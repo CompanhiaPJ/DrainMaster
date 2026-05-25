@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://ccacv36dlyy67"]
+
+[ext_resource type="Script" uid="uid://diyds8xc4isxi" path="res://Cenas/cidade.gd" id="1_jdxb3"]
+[ext_resource type="Texture2D" uid="uid://cj5qpm2xdlj3e" path="res://image/tire_o_da_esquerda_e_202605180820-removebg-preview (12).png" id="2_mw1vx"]
+[ext_resource type="Shader" uid="uid://dwspwonf4hbog" path="res://Cenas/casa.gdshader" id="3_vyxn5"]
+[ext_resource type="Texture2D" uid="uid://c6fh62lxrf7v0" path="res://image/casaazul.png" id="4_sljh6"]
+[ext_resource type="Script" uid="uid://bqrilat1i86fr" path="res://Cenas/casaazul.gd" id="5_opm5p"]
+[ext_resource type="Texture2D" uid="uid://3gihs1b0kkc2" path="res://image/ponte.png" id="6_bd0ou"]
+[ext_resource type="Script" uid="uid://peq4201ocl66" path="res://Cenas/button.gd" id="7_j4rl7"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ic400"]
+shader = ExtResource("3_vyxn5")
+shader_parameter/brightness = 1.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gikm2"]
+size = Vector2(730.0001, 495.00006)
+
+[node name="Node2D" type="Node2D" unique_id=1448108208]
+script = ExtResource("1_jdxb3")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=317424223]
+visible = false
+position = Vector2(1002, 464)
+texture = ExtResource("2_mw1vx")
+
+[node name="casaazul" type="Sprite2D" parent="." unique_id=573700730]
+material = SubResource("ShaderMaterial_ic400")
+position = Vector2(860, 452)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("4_sljh6")
+script = ExtResource("5_opm5p")
+
+[node name="Area2D" type="Area2D" parent="casaazul" unique_id=261625844]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="casaazul/Area2D" unique_id=1738509420]
+visible = false
+position = Vector2(135, -10.000001)
+scale = Vector2(0.9999995, 0.9999995)
+shape = SubResource("RectangleShape2D_gikm2")
+
+[node name="Ponte" type="Sprite2D" parent="." unique_id=1049561301]
+position = Vector2(633, 495.00006)
+scale = Vector2(0.1, 0.12)
+texture = ExtResource("6_bd0ou")
+flip_h = true
+
+[node name="Button" type="Button" parent="." unique_id=1403926364]
+offset_left = 985.0
+offset_top = 570.0
+offset_right = 1100.0
+offset_bottom = 612.0
+text = "Play"
+script = ExtResource("7_j4rl7")
+
+[connection signal="mouse_entered" from="casaazul/Area2D" to="casaazul" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="casaazul/Area2D" to="casaazul" method="_on_area_2d_mouse_exited"]
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
