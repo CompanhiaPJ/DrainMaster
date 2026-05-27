@@ -1,8 +1,110 @@
 [gd_scene format=3 uid="uid://d30bfeg507tie"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_8un2b"]
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_8un2b"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_6a3u2"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_os3ae"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_8jskm"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fru8m"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_gikm2"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_8un2b"]
+
+[sub_resource type="Sky" id="Sky_6a3u2"]
+sky_material = SubResource("ProceduralSkyMaterial_8un2b")
+
+[sub_resource type="Environment" id="Environment_os3ae"]
+background_mode = 2
+sky = SubResource("Sky_6a3u2")
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_8jskm"]
+
+[sub_resource type="Compositor" id="Compositor_fru8m"]
 
 [node name="Node3D" type="Node3D" unique_id=1763821056]
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=930543129]
-mesh = SubResource("BoxMesh_8un2b")
+[node name="vigadaponte" type="StaticBody3D" parent="." unique_id=1927804704]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+physics_material_override = SubResource("PhysicsMaterial_8un2b")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="vigadaponte" unique_id=1333327508]
+shape = SubResource("CylinderShape3D_6a3u2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="vigadaponte/CollisionShape3D" unique_id=930543129]
+mesh = SubResource("CylinderMesh_os3ae")
+
+[node name="vigadaponte2" type="StaticBody3D" parent="." unique_id=1562645829]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 3)
+physics_material_override = SubResource("PhysicsMaterial_8un2b")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="vigadaponte2" unique_id=2016142423]
+shape = SubResource("CylinderShape3D_6a3u2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="vigadaponte2/CollisionShape3D" unique_id=1713285049]
+mesh = SubResource("CylinderMesh_os3ae")
+
+[node name="ponte" type="StaticBody3D" parent="." unique_id=1927248195]
+physics_material_override = SubResource("PhysicsMaterial_8jskm")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ponte" unique_id=837779555]
+transform = Transform3D(1, 0, 0, 0, 0.201, 0, 0, 0, 5, 0, 2.107, 1.5)
+shape = SubResource("BoxShape3D_fru8m")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ponte/CollisionShape3D" unique_id=1897256384]
+mesh = SubResource("BoxMesh_gikm2")
+
+[node name="ponte2" type="StaticBody3D" parent="." unique_id=2054075449]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+physics_material_override = SubResource("PhysicsMaterial_8jskm")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ponte2" unique_id=675149919]
+transform = Transform3D(1, 0, 0, 0, 0.201, 0, 0, 0, 5, 0, 2.107, 1.5)
+shape = SubResource("BoxShape3D_fru8m")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ponte2/CollisionShape3D" unique_id=1054663349]
+mesh = SubResource("BoxMesh_gikm2")
+
+[node name="ponte3" type="StaticBody3D" parent="." unique_id=710439517]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+physics_material_override = SubResource("PhysicsMaterial_8jskm")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ponte3" unique_id=1874483954]
+transform = Transform3D(1, 0, 0, 0, 0.201, 0, 0, 0, 5, 0, 2.107, 1.5)
+shape = SubResource("BoxShape3D_fru8m")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ponte3/CollisionShape3D" unique_id=913754063]
+mesh = SubResource("BoxMesh_gikm2")
+
+[node name="ponte4" type="StaticBody3D" parent="." unique_id=210727953]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+physics_material_override = SubResource("PhysicsMaterial_8jskm")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ponte4" unique_id=143077573]
+transform = Transform3D(1, 0, 0, 0, 0.201, 0, 0, 0, 5, 0, 2.107, 1.5)
+shape = SubResource("BoxShape3D_fru8m")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ponte4/CollisionShape3D" unique_id=324355790]
+mesh = SubResource("BoxMesh_gikm2")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="ponte4" unique_id=1879269096]
+transform = Transform3D(1, 0, 0, 0, 0.201, 0, 0, 0, 5, 1, 2.107, 1.5)
+shape = SubResource("BoxShape3D_fru8m")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ponte4/CollisionShape3D2" unique_id=714768949]
+mesh = SubResource("BoxMesh_gikm2")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=800009603]
+transform = Transform3D(-4.222196e-08, 0.25881904, -0.9659258, 1.131334e-08, 0.9659258, 0.25881904, 1, 0, -4.371139e-08, -9, 7, 1)
+current = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=862714088]
+environment = SubResource("Environment_os3ae")
+camera_attributes = SubResource("CameraAttributesPractical_8jskm")
+compositor = SubResource("Compositor_fru8m")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1103253377]
+transform = Transform3D(0.8660254, 1.4901161e-08, -0.5, 0.5, -2.5809568e-08, 0.8660254, 0, -1, -2.9802322e-08, -8, 8, 0)
