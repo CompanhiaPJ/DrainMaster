@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dudcnvhitpbxf"
-path="res://.godot/imported/Design sem nome (10).png-988278f24eb5440104dc9e261d05371b.ctex"
+uid="uid://c42xopeaxsn83"
+path="res://.godot/imported/casavermelha.png-315ad23f4f47fc086fee6484ca6d9c58.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://image/Design sem nome (10).png"
-dest_files=["res://.godot/imported/Design sem nome (10).png-988278f24eb5440104dc9e261d05371b.ctex"]
+source_file="res://image/casavermelha.png"
+dest_files=["res://.godot/imported/casavermelha.png-315ad23f4f47fc086fee6484ca6d9c58.ctex"]
 
 [params]
 
