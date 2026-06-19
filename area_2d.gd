@@ -7,6 +7,7 @@ var barco = preload("res://Cenas/barco.tscn")
 var dinheiro = false
 @onready var caixaverde = $ColorRect
 @onready var caixavermelha = $ColorRect2
+@onready var botao = $CapturaDeTela20260619095819
 
 func _ready():
 	caixavermelha.color = Color(1, 0, 0, 0.0)
@@ -22,6 +23,7 @@ func _input_event(viewport, event, shape_idx):
 		if dinheiro == true:
 			som.play()
 			cria_barco()
+			botaoescurece()
 		else:
 			erro.play()
 			label2.cor()
@@ -38,3 +40,8 @@ func cria_barco():
 func tiracaixa():
 	caixavermelha.color = Color(1, 0, 0, 0.0)
 	caixaverde.color = Color(0, 1, 0, 0.0)
+	
+func botaoescurece():
+	botao.texture = load("res://image/Design sem nome (15).png")
+	await get_tree().create_timer(0.2).timeout
+	botao.texture = load("res://image/Captura de tela 2026-06-19 095819.png")

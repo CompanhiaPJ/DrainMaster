@@ -2,19 +2,22 @@
 
 [ext_resource type="Texture2D" uid="uid://bo7x14h0mytxm" path="res://image/barco/barco.png" id="1_kxg5b"]
 [ext_resource type="Script" uid="uid://c4b3kowcflu0v" path="res://jogo.gd" id="1_qn35j"]
-[ext_resource type="Texture2D" uid="uid://bcnepvdud2n8v" path="res://image/barco/Fundo.png" id="2_01kpq"]
+[ext_resource type="Texture2D" uid="uid://gteiwvr88w38" path="res://image/barco/deixa_somente_o_fundo_pode_202606190859.jpeg" id="2_0ekxr"]
+[ext_resource type="Texture2D" uid="uid://biagf25gg2qpo" path="res://image/Design sem nome (14).png" id="3_3pkuu"]
 [ext_resource type="Script" uid="uid://b62gx0uyg7wba" path="res://area_2d.gd" id="3_yq54j"]
+[ext_resource type="Texture2D" uid="uid://dx7m1r6eg744m" path="res://image/barco/placadepreco.png" id="4_4aojw"]
 [ext_resource type="Script" uid="uid://c8f2jsdu8bl37" path="res://label_2.gd" id="5_8c340"]
 [ext_resource type="Script" uid="uid://cfih4r2mont11" path="res://label.gd" id="5_45nkh"]
 [ext_resource type="AudioStream" uid="uid://c10gyelnn4ngf" path="res://audios/[Efeito Sonoro] Dinheiro - Efeitos Sonoros Produções (youtube).mp3" id="5_ysdx3"]
 [ext_resource type="AudioStream" uid="uid://d34371wcsjc85" path="res://audios/error-notification.mp3" id="6_ysdx3"]
+[ext_resource type="Texture2D" uid="uid://ckw6w6i82fi0m" path="res://image/Captura de tela 2026-06-19 095819.png" id="7_n6akw"]
 [ext_resource type="FontFile" uid="uid://c8pyqysuxuwma" path="res://fonte/FonteProjetoIntegrador.ttf" id="8_2ka1p"]
 [ext_resource type="AudioStream" uid="uid://cndtgmwv3vgum" path="res://audios/dinheiro-caindo-na-conta.mp3" id="9_t8pok"]
 [ext_resource type="Script" uid="uid://jh28lhrapaaa" path="res://hidra_1.gd" id="10_mtw28"]
 [ext_resource type="Script" uid="uid://c3kyndk2flw3t" path="res://hidra_2.gd" id="11_orj5g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yq54j"]
-size = Vector2(489.79504, 359.14282)
+size = Vector2(503.13455, 301.71426)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t8pok"]
 size = Vector2(1183, 1.5)
@@ -26,9 +29,24 @@ size = Vector2(111.25, 83)
 script = ExtResource("1_qn35j")
 
 [node name="Fundo" type="Sprite2D" parent="." unique_id=137544902]
-position = Vector2(575.99994, 325)
-scale = Vector2(1.3032694, 1.2985972)
-texture = ExtResource("2_01kpq")
+position = Vector2(576, 324)
+scale = Vector2(0.4186047, 0.421875)
+texture = ExtResource("2_0ekxr")
+
+[node name="DesignSemNome(14)" type="Sprite2D" parent="." unique_id=921317456]
+position = Vector2(576, 323.99997)
+scale = Vector2(0.5625, 0.5669291)
+texture = ExtResource("3_3pkuu")
+
+[node name="Placadepreco" type="Sprite2D" parent="." unique_id=2094476262]
+position = Vector2(1045, 166)
+scale = Vector2(0.052234773, 0.055338547)
+texture = ExtResource("4_4aojw")
+
+[node name="Placadepreco2" type="Sprite2D" parent="." unique_id=1628303710]
+position = Vector2(113, 167.00002)
+scale = Vector2(0.052234773, 0.055338547)
+texture = ExtResource("4_4aojw")
 
 [node name="barcoparado" type="Sprite2D" parent="." unique_id=422227399]
 position = Vector2(-102.99994, 78)
@@ -38,8 +56,13 @@ texture = ExtResource("1_kxg5b")
 [node name="Area2D" type="Area2D" parent="barcoparado" unique_id=1239575326]
 script = ExtResource("3_yq54j")
 
+[node name="CapturaDeTela20260619095819" type="Sprite2D" parent="barcoparado/Area2D" unique_id=1459095290]
+position = Vector2(7524.166, -383.14282)
+scale = Vector2(1.7469981, 1.5789473)
+texture = ExtResource("7_n6akw")
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="barcoparado/Area2D" unique_id=1934769631]
-position = Vector2(7554.659, -363.42856)
+position = Vector2(7524.1665, -384)
 shape = SubResource("RectangleShape2D_yq54j")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="barcoparado/Area2D" unique_id=1164594894]
@@ -107,10 +130,10 @@ shape = SubResource("RectangleShape2D_mtw28")
 
 [node name="Label" type="Label" parent="hidra1" unique_id=437928004]
 layout_mode = 0
-offset_left = 250.0
-offset_top = -150.0
-offset_right = 309.0
-offset_bottom = -113.0
+offset_left = 154.0
+offset_top = -146.0
+offset_right = 213.0
+offset_bottom = -109.0
 theme_override_colors/font_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
 theme_override_fonts/font = ExtResource("8_2ka1p")
 theme_override_font_sizes/font_size = 36
@@ -131,13 +154,13 @@ shape = SubResource("RectangleShape2D_mtw28")
 
 [node name="Label" type="Label" parent="hidra2" unique_id=877749547]
 layout_mode = 0
-offset_left = -216.0
-offset_top = -167.0
-offset_right = -164.0
-offset_bottom = -132.0
+offset_left = -168.0
+offset_top = -154.0
+offset_right = -110.0
+offset_bottom = -117.0
 theme_override_colors/font_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
 theme_override_fonts/font = ExtResource("8_2ka1p")
-theme_override_font_sizes/font_size = 31
+theme_override_font_sizes/font_size = 36
 text = "0.50"
 
 [node name="Timer" type="Timer" parent="." unique_id=1823957391]
