@@ -120,11 +120,11 @@ offset_bottom = 100.0
 script = ExtResource("10_mtw28")
 metadata/_edit_use_anchors_ = true
 
-[node name="Area2D" type="Area2D" parent="Node2D/hidra1" unique_id=329958295]
+[node name="AREA" type="Area2D" parent="Node2D/hidra1" unique_id=329958295]
 position = Vector2(100, 0)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/hidra1/Area2D" unique_id=106526091]
-position = Vector2(0, 66)
+[node name="collisionShape2D" type="CollisionShape2D" parent="Node2D/hidra1/AREA" unique_id=106526091]
+position = Vector2(-41, 66)
 shape = SubResource("RectangleShape2D_mtw28")
 
 [node name="Label" type="Label" parent="Node2D/hidra1" unique_id=437928004]
@@ -144,6 +144,9 @@ script = ExtResource("14_4aojw")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/hidra1/Area2D2" unique_id=1132065051]
 position = Vector2(183, -119)
 shape = SubResource("RectangleShape2D_3pkuu")
+
+[node name="Marker2D" type="Marker2D" parent="Node2D/hidra1" unique_id=923706054]
+position = Vector2(145, 0)
 
 [node name="hidra2" type="ColorRect" parent="." unique_id=1472840186]
 offset_left = 1184.0
@@ -173,5 +176,6 @@ text = "0.50"
 wait_time = 2.0
 autostart = true
 
+[connection signal="area_entered" from="Node2D/hidra1/AREA" to="Node2D/hidra1/Area2D2" method="_on_area_2d_area_entered"]
 [connection signal="timeout" from="Timer" to="Node2D/hidra1" method="_on_timer_timeout"]
 [connection signal="timeout" from="Timer" to="hidra2" method="_on_timer_timeout"]
