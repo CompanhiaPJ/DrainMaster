@@ -1,5 +1,4 @@
 extends ColorRect
-
 @onready var label = $"../hidra1/Label"
 var rng = RandomNumberGenerator.new()
 var valor = 0.5

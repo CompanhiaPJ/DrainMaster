@@ -13,14 +13,14 @@ func verifi():
 		area.dinheiro = false
 
 func cor():
-	modulate = Color(1, 0, 0)
+	add_theme_color_override("font_color", Color(1,0,0))
 	await get_tree().create_timer(0.5).timeout
-	modulate = Color(1, 1, 1)
+	add_theme_color_override("font_color", Color(0,0,0))
 
 func corganha():
-	modulate = Color(0, 1, 0)
+	add_theme_color_override("font_color", Color(0,1,0))
 	await get_tree().create_timer(0.5).timeout
-	modulate = Color(1, 1, 1)
+	add_theme_color_override("font_color", Color(0,0,0))
 	
 func ganhar(ganha):
 	som.play()
