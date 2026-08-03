@@ -66,6 +66,7 @@ func seguir_alvo(delta):
 
 
 func chegou_no_destino():
+	print("Chegou!")
 	seguindo = false
 	parado_no_alvo = true
 
