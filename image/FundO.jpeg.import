@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bcnepvdud2n8v"
-path="res://.godot/imported/Fundo.png-a7660410aa28d7281e90bee52d702e30.ctex"
+uid="uid://bjrp83gv72vly"
+path="res://.godot/imported/FundO.jpeg-202ccb6c49ef7c1495ef8f3fe4dffcef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://image/barco/Fundo.png"
-dest_files=["res://.godot/imported/Fundo.png-a7660410aa28d7281e90bee52d702e30.ctex"]
+source_file="res://image/FundO.jpeg"
+dest_files=["res://.godot/imported/FundO.jpeg-202ccb6c49ef7c1495ef8f3fe4dffcef.ctex"]
 
 [params]
 

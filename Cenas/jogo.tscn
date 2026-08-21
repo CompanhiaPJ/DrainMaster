@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bo7x14h0mytxm" path="res://image/barco/barco.png" id="1_kxg5b"]
 [ext_resource type="Script" uid="uid://c4b3kowcflu0v" path="res://jogo.gd" id="1_qn35j"]
-[ext_resource type="Texture2D" uid="uid://gteiwvr88w38" path="res://image/barco/deixa_somente_o_fundo_pode_202606190859.jpeg" id="2_0ekxr"]
+[ext_resource type="Texture2D" uid="uid://bjrp83gv72vly" path="res://image/FundO.jpeg" id="2_4aojw"]
 [ext_resource type="Texture2D" uid="uid://biagf25gg2qpo" path="res://image/Design sem nome (14).png" id="3_3pkuu"]
 [ext_resource type="Script" uid="uid://b62gx0uyg7wba" path="res://area_2d.gd" id="3_yq54j"]
 [ext_resource type="Texture2D" uid="uid://dx7m1r6eg744m" path="res://image/barco/placadepreco.png" id="4_4aojw"]
@@ -20,7 +20,7 @@
 size = Vector2(503.13455, 301.71426)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t8pok"]
-size = Vector2(1183, 1.5)
+size = Vector2(1183, 8)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mtw28"]
 size = Vector2(28.625, 78.5)
@@ -35,9 +35,9 @@ size = Vector2(71.75, 57)
 script = ExtResource("1_qn35j")
 
 [node name="Fundo" type="Sprite2D" parent="." unique_id=137544902]
-position = Vector2(576, 324)
-scale = Vector2(0.4186047, 0.421875)
-texture = ExtResource("2_0ekxr")
+position = Vector2(576.55804, 323.71094)
+scale = Vector2(0.7230522, 0.7254788)
+texture = ExtResource("2_4aojw")
 
 [node name="DesignSemNome(14)" type="Sprite2D" parent="." unique_id=921317456]
 position = Vector2(576, 323.99997)
@@ -45,12 +45,12 @@ scale = Vector2(0.5625, 0.5669291)
 texture = ExtResource("3_3pkuu")
 
 [node name="Placadepreco" type="Sprite2D" parent="." unique_id=2094476262]
-position = Vector2(1045, 166)
+position = Vector2(957, 131)
 scale = Vector2(0.052234773, 0.055338547)
 texture = ExtResource("4_4aojw")
 
 [node name="Placadepreco2" type="Sprite2D" parent="." unique_id=1628303710]
-position = Vector2(113, 167.00002)
+position = Vector2(208, 129)
 scale = Vector2(0.052234773, 0.055338547)
 texture = ExtResource("4_4aojw")
 
@@ -82,15 +82,15 @@ visible = false
 offset_left = 716.5869
 offset_top = -527.99994
 offset_right = 9765.407
-offset_bottom = 2159.9998
+offset_bottom = 1323.4285
 color = Color(0.29753923, 0.66600835, 0, 1)
 
 [node name="ColorRect2" type="ColorRect" parent="barcoparado/Area2D" unique_id=1045329435]
 visible = false
 offset_left = 663.22394
-offset_top = 2173.714
+offset_top = 1330.2855
 offset_right = 9765.407
-offset_bottom = 3942.8567
+offset_bottom = 3942.8564
 color = Color(0.7647059, 0, 0, 1)
 
 [node name="Label2" type="Label" parent="." unique_id=535942328]
@@ -111,7 +111,7 @@ stream = ExtResource("9_t8pok")
 [node name="mar" type="Area2D" parent="." unique_id=1171768984]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="mar" unique_id=1640941803]
-position = Vector2(592, 393.75)
+position = Vector2(592, 276)
 shape = SubResource("RectangleShape2D_t8pok")
 
 [node name="Node2D" type="Node2D" parent="." unique_id=989447711]
@@ -127,15 +127,15 @@ metadata/_edit_use_anchors_ = true
 position = Vector2(100, 0)
 
 [node name="collisionShape2D" type="CollisionShape2D" parent="Node2D/hidra1/AREA" unique_id=106526091]
-position = Vector2(-41, 66)
+position = Vector2(-44, -49)
 shape = SubResource("RectangleShape2D_mtw28")
 
 [node name="Label" type="Label" parent="Node2D/hidra1" unique_id=437928004]
 layout_mode = 0
-offset_left = 154.0
-offset_top = -146.0
-offset_right = 213.0
-offset_bottom = -109.0
+offset_left = 248.0
+offset_top = -185.0
+offset_right = 307.0
+offset_bottom = -148.0
 theme_override_colors/font_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
 theme_override_fonts/font = ExtResource("8_2ka1p")
 theme_override_font_sizes/font_size = 36
@@ -145,7 +145,7 @@ text = "0.50"
 script = ExtResource("14_4aojw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/hidra1/Area2D2" unique_id=1132065051]
-position = Vector2(183, -119)
+position = Vector2(278, -158)
 shape = SubResource("RectangleShape2D_3pkuu")
 
 [node name="Marker2D" type="Marker2D" parent="Node2D/hidra1" unique_id=923706054]
@@ -162,15 +162,15 @@ script = ExtResource("11_orj5g")
 [node name="AREA" type="Area2D" parent="Node2D2/hidra2" unique_id=9510766]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D2/hidra2/AREA" unique_id=1178073576]
-position = Vector2(-838, 60)
+position = Vector2(-834, -58)
 shape = SubResource("RectangleShape2D_mtw28")
 
 [node name="Label" type="Label" parent="Node2D2/hidra2" unique_id=877749547]
 layout_mode = 0
-offset_left = -985.0
-offset_top = -154.0
-offset_right = -927.0
-offset_bottom = -117.0
+offset_left = -1072.0
+offset_top = -190.0
+offset_right = -1014.0
+offset_bottom = -153.0
 theme_override_colors/font_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
 theme_override_fonts/font = ExtResource("8_2ka1p")
 theme_override_font_sizes/font_size = 36
@@ -180,7 +180,7 @@ text = "0.50"
 script = ExtResource("14_4aojw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D2/hidra2/Area2D2" unique_id=1914934438]
-position = Vector2(-955, -128)
+position = Vector2(-1043, -163)
 shape = SubResource("RectangleShape2D_p7t6x")
 
 [node name="Marker2D" type="Marker2D" parent="Node2D2/hidra2" unique_id=2036008699]
