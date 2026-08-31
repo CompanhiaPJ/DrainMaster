@@ -6,7 +6,9 @@
 [ext_resource type="Texture2D" uid="uid://biagf25gg2qpo" path="res://image/Design sem nome (14).png" id="3_3pkuu"]
 [ext_resource type="Script" uid="uid://b62gx0uyg7wba" path="res://area_2d.gd" id="3_yq54j"]
 [ext_resource type="Texture2D" uid="uid://dx7m1r6eg744m" path="res://image/barco/placadepreco.png" id="4_4aojw"]
+[ext_resource type="Script" uid="uid://b6g3ouwvwewa2" path="res://Cenas/design_sem_nome(14).gd" id="4_eqycv"]
 [ext_resource type="Script" uid="uid://c8f2jsdu8bl37" path="res://label_2.gd" id="5_8c340"]
+[ext_resource type="Script" uid="uid://c4rv05cflgxnc" path="res://Cenas/label_2.gd" id="5_an0l0"]
 [ext_resource type="AudioStream" uid="uid://c10gyelnn4ngf" path="res://audios/[Efeito Sonoro] Dinheiro - Efeitos Sonoros Produções (youtube).mp3" id="5_ysdx3"]
 [ext_resource type="AudioStream" uid="uid://d34371wcsjc85" path="res://audios/error-notification.mp3" id="6_ysdx3"]
 [ext_resource type="Texture2D" uid="uid://ckw6w6i82fi0m" path="res://image/Captura de tela 2026-06-19 095819.png" id="7_n6akw"]
@@ -43,6 +45,43 @@ texture = ExtResource("2_4aojw")
 position = Vector2(576, 323.99997)
 scale = Vector2(0.5625, 0.5669291)
 texture = ExtResource("3_3pkuu")
+script = ExtResource("4_eqycv")
+
+[node name="ColorRect" type="ColorRect" parent="DesignSemNome(14)" unique_id=1348253524]
+offset_left = -904.88885
+offset_top = -518.58325
+offset_right = -696.93787
+offset_bottom = -463.67133
+rotation = -0.06974089
+color = Color(0.6313726, 0.6039216, 0.5137255, 1)
+
+[node name="Label" type="Label" parent="DesignSemNome(14)/ColorRect" unique_id=1996657107]
+layout_mode = 0
+offset_left = 16.206936
+offset_top = -2.4042525
+offset_right = 112.20694
+offset_bottom = 57.59575
+theme_override_colors/font_color = Color(0.06666667, 0.06666667, 0.06666667, 1)
+theme_override_fonts/font = ExtResource("8_2ka1p")
+theme_override_font_sizes/font_size = 60
+text = "JAN"
+
+[node name="Label2" type="Label" parent="DesignSemNome(14)/ColorRect" unique_id=844763216]
+layout_mode = 0
+offset_left = 119.68197
+offset_top = -4.0170264
+offset_right = 184.11285
+offset_bottom = 154.98297
+theme_override_colors/font_color = Color(0.06666667, 0.06666667, 0.06666667, 1)
+theme_override_fonts/font = ExtResource("8_2ka1p")
+theme_override_font_sizes/font_size = 66
+text = "01
+"
+script = ExtResource("5_an0l0")
+
+[node name="tempo" type="Timer" parent="DesignSemNome(14)" unique_id=346879299]
+wait_time = 2.0
+autostart = true
 
 [node name="Placadepreco" type="Sprite2D" parent="." unique_id=2094476262]
 position = Vector2(957, 131)
