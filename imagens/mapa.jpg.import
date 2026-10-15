@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c6fh62lxrf7v0"
-path="res://.godot/imported/casaazul.png-11cea978e29c2ccfb523e3f0a09d0c40.ctex"
+uid="uid://crid7p11kdki"
+path="res://.godot/imported/mapa.jpg-d23cd37a1f7aeddea3f50773c5888a40.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://image/casaazul.png"
-dest_files=["res://.godot/imported/casaazul.png-11cea978e29c2ccfb523e3f0a09d0c40.ctex"]
+source_file="res://imagens/mapa.jpg"
+dest_files=["res://.godot/imported/mapa.jpg-d23cd37a1f7aeddea3f50773c5888a40.ctex"]
 
 [params]
 

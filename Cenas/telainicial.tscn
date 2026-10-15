@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://ciwuheq6wnffk"]
 
 [ext_resource type="Script" uid="uid://bnvxdeskrgjpl" path="res://telainicial.gd" id="1_3gpnj"]
-[ext_resource type="Texture2D" uid="uid://cg3y44s0a8flf" path="res://image/Tire_fundo_dessa_202603300816-removebg-preview.png" id="2_d7fp5"]
+[ext_resource type="Texture2D" uid="uid://cg3y44s0a8flf" path="res://imagens/Tire_fundo_dessa_202603300816-removebg-preview.png" id="2_d7fp5"]
 [ext_resource type="AudioStream" uid="uid://ddr5wd764ufw1" path="res://audios/button-click_[cut_0sec].mp3" id="3_5hhvd"]
-[ext_resource type="Texture2D" uid="uid://bo7x14h0mytxm" path="res://image/barco/barco.png" id="4_jb0m0"]
+[ext_resource type="Texture2D" uid="uid://bo7x14h0mytxm" path="res://imagens/barco/barco.png" id="4_jb0m0"]
 
 [node name="Node2D" type="Node2D" unique_id=1678309627]
 script = ExtResource("1_3gpnj")

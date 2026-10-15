@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cg3y44s0a8flf"
-path="res://.godot/imported/Tire_fundo_dessa_202603300816-removebg-preview.png-2097115c109ca747c7ea891ecc9de0d1.ctex"
+uid="uid://c42xopeaxsn83"
+path="res://.godot/imported/casavermelha.png-3c3d6c54835a1e4de25cbf663896f3a3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://image/Tire_fundo_dessa_202603300816-removebg-preview.png"
-dest_files=["res://.godot/imported/Tire_fundo_dessa_202603300816-removebg-preview.png-2097115c109ca747c7ea891ecc9de0d1.ctex"]
+source_file="res://imagens/casavermelha.png"
+dest_files=["res://.godot/imported/casavermelha.png-3c3d6c54835a1e4de25cbf663896f3a3.ctex"]
 
 [params]
 

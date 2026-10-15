@@ -1,0 +1,7 @@
+[gd_resource type="Theme" format=3 uid="uid://bn8g3uk3mgswg"]
+
+[ext_resource type="FontFile" uid="uid://c8pyqysuxuwma" path="res://fonte/FonteProjetoIntegrador.ttf" id="1_hd3pf"]
+
+[resource]
+default_font = ExtResource("1_hd3pf")
+default_font_size = 28

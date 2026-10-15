@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://cmb7knc8t6e4m" path="res://historia.gd" id="1_frv7s"]
 [ext_resource type="Script" uid="uid://b2mktn6w1fhlf" path="res://labelhistoria.gd" id="2_frv7s"]
 [ext_resource type="FontFile" uid="uid://c8pyqysuxuwma" path="res://fonte/FonteProjetoIntegrador.ttf" id="2_y27lj"]
-[ext_resource type="Texture2D" uid="uid://cj5qpm2xdlj3e" path="res://image/tire_o_da_esquerda_e_202605180820-removebg-preview (12).png" id="4_g4k01"]
+[ext_resource type="Texture2D" uid="uid://cj5qpm2xdlj3e" path="res://imagens/tire_o_da_esquerda_e_202605180820-removebg-preview (12).png" id="4_g4k01"]
 [ext_resource type="VideoStream" uid="uid://pdppcaejr8pc" path="res://videos/Animated_river_landscape_transformation_sequence._20261015090004.ogv" id="5_xpscs"]
 
 [node name="Node2D" type="Node2D" unique_id=1425934130]

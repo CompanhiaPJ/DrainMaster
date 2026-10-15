@@ -1,0 +1,89 @@
+[gd_scene format=3 uid="uid://dm1ikv2fxpkkq"]
+
+[ext_resource type="Texture2D" uid="uid://crid7p11kdki" path="res://imagens/mapa.jpg" id="1_d1uaa"]
+[ext_resource type="Shader" uid="uid://dwspwonf4hbog" path="res://Cenas/casa.gdshader" id="2_qusxk"]
+[ext_resource type="Texture2D" uid="uid://dr0bboywf086u" path="res://imagens/bairros/tinga.png" id="3_kgypb"]
+[ext_resource type="Script" uid="uid://bsuawdoxtg380" path="res://Cenas/tinga.gd" id="4_rb3al"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_au71f"]
+shader = ExtResource("2_qusxk")
+shader_parameter/brightness = 1.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j6rx6"]
+size = Vector2(26, 18)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_entqu"]
+a = Vector2(-43, -40)
+b = Vector2(-16, -29)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pq2a7"]
+radius = 4.0
+height = 24.0
+
+[node name="Node2D" type="Node2D" unique_id=642652324]
+
+[node name="Mapa" type="Sprite2D" parent="." unique_id=1074887745]
+position = Vector2(576, 323)
+scale = Vector2(0.8619186, 0.8802084)
+texture = ExtResource("1_d1uaa")
+
+[node name="Tinga" type="Sprite2D" parent="." unique_id=423727151]
+material = SubResource("ShaderMaterial_au71f")
+position = Vector2(327, 95)
+texture = ExtResource("3_kgypb")
+script = ExtResource("4_rb3al")
+
+[node name="Area2D" type="Area2D" parent="Tinga" unique_id=1140661627]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tinga/Area2D" unique_id=1555838864]
+position = Vector2(16, 16)
+shape = SubResource("RectangleShape2D_j6rx6")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Tinga/Area2D" unique_id=1920434804]
+position = Vector2(-4, 13)
+rotation = -0.17543752
+scale = Vector2(0.5, 0.4)
+shape = SubResource("RectangleShape2D_j6rx6")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Tinga/Area2D" unique_id=1635748248]
+position = Vector2(16, 16)
+shape = SubResource("SegmentShape2D_entqu")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Tinga/Area2D" unique_id=1986366268]
+position = Vector2(5, -3)
+rotation = -0.7442735
+shape = SubResource("CapsuleShape2D_pq2a7")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Tinga/Area2D" unique_id=1786489632]
+position = Vector2(14, 7)
+rotation = -0.7442735
+shape = SubResource("CapsuleShape2D_pq2a7")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Tinga/Area2D" unique_id=853202211]
+position = Vector2(11, 10)
+rotation = -0.7442735
+shape = SubResource("CapsuleShape2D_pq2a7")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Tinga/Area2D" unique_id=773973162]
+position = Vector2(-9, -15)
+rotation = -1.1063852
+shape = SubResource("CapsuleShape2D_pq2a7")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="Tinga/Area2D" unique_id=1629040902]
+position = Vector2(0, 12)
+rotation = -1.724638
+shape = SubResource("CapsuleShape2D_pq2a7")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1525064931]
+offset_right = 1159.0
+offset_bottom = 651.0
+color = Color(0, 0, 0, 0.5137255)
+
+[node name="TIngaGrande" type="Sprite2D" parent="." unique_id=1261498429]
+visible = false
+position = Vector2(543, 316)
+scale = Vector2(7.042857, 8.620689)
+texture = ExtResource("3_kgypb")
+
+[connection signal="mouse_entered" from="Tinga/Area2D" to="Tinga" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Tinga/Area2D" to="Tinga" method="_on_area_2d_mouse_exited"]

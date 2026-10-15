@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3gihs1b0kkc2"
-path="res://.godot/imported/ponte.png-e113207193f50b407269ee9e58f691b5.ctex"
+uid="uid://ckw6w6i82fi0m"
+path="res://.godot/imported/Captura de tela 2026-06-19 095819.png-f20494da68ce803d5f9ee04f94866e43.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://image/ponte.png"
-dest_files=["res://.godot/imported/ponte.png-e113207193f50b407269ee9e58f691b5.ctex"]
+source_file="res://imagens/Captura de tela 2026-06-19 095819.png"
+dest_files=["res://.godot/imported/Captura de tela 2026-06-19 095819.png-f20494da68ce803d5f9ee04f94866e43.ctex"]
 
 [params]
 

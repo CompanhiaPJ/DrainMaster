@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cj5qpm2xdlj3e"
-path="res://.godot/imported/tire_o_da_esquerda_e_202605180820-removebg-preview (12).png-dd97b56d66ad50ff7942f8f9a46a0965.ctex"
+uid="uid://biagf25gg2qpo"
+path="res://.godot/imported/Design sem nome (14).png-b9cb35076040a7cdfb1d7a0e2924f629.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://image/tire_o_da_esquerda_e_202605180820-removebg-preview (12).png"
-dest_files=["res://.godot/imported/tire_o_da_esquerda_e_202605180820-removebg-preview (12).png-dd97b56d66ad50ff7942f8f9a46a0965.ctex"]
+source_file="res://imagens/Design sem nome (14).png"
+dest_files=["res://.godot/imported/Design sem nome (14).png-b9cb35076040a7cdfb1d7a0e2924f629.ctex"]
 
 [params]
 
