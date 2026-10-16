@@ -3,6 +3,7 @@ extends Sprite2D
 @onready var time = $"tempo"
 @onready var label_numero = $ColorRect/Label2
 @onready var label_texto = $ColorRect/Label
+@onready var Nde = $".."
 
 var numero := 1
 
@@ -73,3 +74,7 @@ func calendario():
 		
 	if label_numero.text == "31" and label_texto.text == "DEZ":
 		print("acabou")
+
+
+func _on_button_pressed() -> void:
+	Nde.finalmapa()

@@ -1,6 +1,8 @@
 extends Label
 @onready var som = $AudioStreamPlayer2D
 @onready var area = $"../barcoparado/Area2D"
+@onready var texto = $"../Fundo/Label2"
+var valorvolatil = 0
 
 func verifi():
 	var valor = int(text)
@@ -26,7 +28,10 @@ func ganhar(ganha):
 	som.play()
 	await get_tree().create_timer(0.5).timeout
 	var valor = int(text)
-	valor = valor + ganha
+	valor = valor + int(ganha)
 	corganha()
 	text = str(valor)
 	
+func texto1(valor):
+	valorvolatil += valor
+	texto.text = str(valorvolatil) + " KG"

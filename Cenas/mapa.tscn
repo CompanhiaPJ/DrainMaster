@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://dm1ikv2fxpkkq"]
 
-[ext_resource type="Texture2D" uid="uid://crid7p11kdki" path="res://imagens/mapa.jpg" id="1_d1uaa"]
+[ext_resource type="Texture2D" uid="uid://crid7p11kdki" path="res://image/mapa.jpg" id="1_d1uaa"]
 [ext_resource type="Shader" uid="uid://dwspwonf4hbog" path="res://Cenas/casa.gdshader" id="2_qusxk"]
-[ext_resource type="Texture2D" uid="uid://dr0bboywf086u" path="res://imagens/bairros/tinga.png" id="3_kgypb"]
+[ext_resource type="Texture2D" uid="uid://dr0bboywf086u" path="res://image/bairros/tinga.png" id="3_kgypb"]
 [ext_resource type="Script" uid="uid://bsuawdoxtg380" path="res://Cenas/tinga.gd" id="4_rb3al"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_au71f"]

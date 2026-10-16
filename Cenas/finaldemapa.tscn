@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://c437plikbaa6j"]
+
+[ext_resource type="Script" uid="uid://cfih4r2mont11" path="res://label.gd" id="1_2vv40"]
+[ext_resource type="Script" uid="uid://34l7hchgx0dw" path="res://Cenas/finaldemapa.gd" id="1_moqnn"]
+
+[node name="Node2D" type="Node2D" unique_id=721592557]
+script = ExtResource("1_moqnn")
+
+[node name="Label" type="Label" parent="." unique_id=11812208]
+offset_right = 40.0
+offset_bottom = 23.0
+script = ExtResource("1_2vv40")
+
+[node name="Button" type="Button" parent="." unique_id=1309377844]
+offset_left = 1020.0
+offset_top = 580.0
+offset_right = 1116.0
+offset_bottom = 616.0
+theme_override_font_sizes/font_size = 20
+text = "Continue"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
