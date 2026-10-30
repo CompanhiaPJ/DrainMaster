@@ -1,6 +1,10 @@
+
 extends Node2D
+
 var meta_cumprida = false
+
 @onready var label = $Label
+
 var valor = 0
 
 func _ready():
@@ -13,9 +17,9 @@ func _ready():
 
 
 func _on_button_pressed() -> void:
-	var cena = load("res://Cenas/cidade2.tscn").instantiate()
-	cena.valor = valor
+	if valor >= 0:
+		GameManager.adicionar_dinheiro(valor)
+	else:
+		GameManager.gastar_dinheiro(abs(valor))
 
-	get_tree().root.add_child(cena)
-	get_tree().current_scene.queue_free()
-	get_tree().current_scene = cena
+	get_tree().change_scene_to_file("res://Cenas/cidade2.tscn")
